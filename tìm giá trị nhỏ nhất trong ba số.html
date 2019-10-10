@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let input1= parseInt(prompt("nhập số nguyên 1: "));
+    let input2= parseInt(prompt("nhập số nguyên 2: "));
+    let input3= parseInt(prompt("nhập số nguyên 3: "));
+    function checkSmallestValue() {
+        let min= input1;
+        if( input2 <min) {
+           min=  input2;
+        }
+        if(input3< min) {
+            min= input3;
+        } alert( "số có giá trị nhỏ nhất là:" + min );
+    }
+    checkSmallestValue();
+</script>
+
+</body>
+</html>

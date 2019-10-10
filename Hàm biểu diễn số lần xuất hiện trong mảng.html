@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    //let input= prompt("Xin mời nhập:");
+    let a=prompt("Nhập số phần tử của mảng");;
+    alert(checkFrequency(a));
+    function checkFrequency(num) {
+        var a= [ ];
+        for(var i=0;i<num; i++) {
+             input= prompt("Xin mời nhập phần tử thứ " + (i+1));
+            a.push(input);
+        }
+        var count=0;
+        var elementTest= prompt("nhập vào ki tự để kiểm tra:");
+        if(a.indexOf(elementTest)==-1){
+            count=-1;
+        }else {
+            for( var j=0; j<a.length; j++) {
+                if (a[j] == elementTest) {
+                    count++;
+                }
+            }
+        } return count;
+    }
+</script>
+
+</body>
+</html>
